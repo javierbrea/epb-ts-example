@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+      "target": "es6",
+      "module": "commonjs",
+      "outDir": "dist",
+      "baseUrl": "./src",
+      "paths": {
+        "@modules/*": ["modules/*"],
+        "@components/*": ["components/*"]
+      },
+      "plugins": [
+        // Transform paths in output .js files
+        { "transform": "typescript-transform-paths" }
+      ]
+  },
+  "include": [
+    "cypress/**/*.ts",
+    "src/**/*.ts"
+  ],
+  "exclude": [
+      "node_modules"
+  ]
+}
