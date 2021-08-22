@@ -2,7 +2,7 @@
 
 This repository contains an example of the eslint plugin [`eslint-plugin-boundaries`](https://github.com/javierbrea/eslint-plugin-boundaries) usage with [TypeScript](https://www.typescriptlang.org/), including custom TS paths.
 
-The docs of the plugin itself contains `TypeScript` configuration instructions.
+The documentation of the plugin itself contains [`TypeScript` configuration instructions](https://github.com/javierbrea/eslint-plugin-boundaries#usage-with-typescript).
 
 ## Installation
 
