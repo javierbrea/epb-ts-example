@@ -28,8 +28,7 @@
     "module-alias": "2.2.3",
     "prettier": "3.3.3",
     "ts-patch": "3.2.1",
-    "typescript": "5.6.3",
-    "typescript-transform-paths": "3.5.1"
+    "typescript": "5.6.3"
   },
   "_moduleAliases": {
     "@modules": "./dist/modules",
