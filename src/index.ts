@@ -1,3 +1,5 @@
+import "module-alias/register";
+
 import moduleA from "@modules/module-a";
 import moduleB from "@modules/module-b";
 

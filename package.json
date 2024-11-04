@@ -1,7 +1,7 @@
 {
   "name": "epb-ts-example",
   "private": true,
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "eslint-plugin-boundaries TypeScript configuration example",
   "author": "Javier Brea",
   "license": "MIT",
@@ -14,19 +14,25 @@
     "test": "jest"
   },
   "devDependencies": {
-    "@typescript-eslint/eslint-plugin": "4.29.2",
-    "@typescript-eslint/parser": "4.29.2",
+    "@eslint/js": "9.13.0",
+    "@typescript-eslint/eslint-plugin": "8.13.0",
+    "@typescript-eslint/parser": "8.13.0",
     "cross-env": "7.0.3",
-    "eslint": "7.32.0",
-    "eslint-config-prettier": "8.3.0",
-    "eslint-import-resolver-typescript": "2.4.0",
-    "eslint-plugin-boundaries": "2.4.1",
-    "eslint-plugin-jest": "24.4.0",
-    "eslint-plugin-prettier": "3.4.1",
-    "jest": "27.0.6",
-    "prettier": "2.3.2",
-    "ts-patch": "1.4.2",
-    "typescript": "4.3.5",
-    "typescript-transform-paths": "3.3.1"
+    "eslint": "9.14.0",
+    "eslint-config-prettier": "9.1.0",
+    "eslint-import-resolver-typescript": "3.6.3",
+    "eslint-plugin-boundaries": "4.2.2",
+    "eslint-plugin-jest": "28.8.3",
+    "eslint-plugin-prettier": "5.2.1",
+    "jest": "29.7.0",
+    "module-alias": "2.2.3",
+    "prettier": "3.3.3",
+    "ts-patch": "3.2.1",
+    "typescript": "5.6.3",
+    "typescript-transform-paths": "3.5.1"
+  },
+  "_moduleAliases": {
+    "@modules": "./dist/modules",
+    "@components": "./dist/components"
   }
 }
