@@ -31,17 +31,14 @@ class Logger {
   }
 }
 
-function getNpmCommand() {
-  return /^win/.test(process.platform) ? "npm.cmd" : "npm";
-}
-
 function npmRun(commands, options = {}) {
   const logData = new Logger();
   let npmProcess;
   return new Promise((resolve) => {
     const commandsArray = ensureArray(commands);
-    npmProcess = childProcess.spawn(getNpmCommand(), ["run"].concat(commandsArray), {
+    npmProcess = childProcess.spawn("npm", ["run"].concat(commandsArray), {
       cwd: options.cwd || rootPath,
+      shell: /^win/.test(process.platform) ? true : false,
       env: {
         ...process.env,
         ...options.env,
