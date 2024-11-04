@@ -1,23 +1,18 @@
 {
   "compilerOptions": {
-      "target": "es6",
-      "module": "commonjs",
-      "outDir": "dist",
-      "baseUrl": "./src",
-      "paths": {
-        "@modules/*": ["modules/*"],
-        "@components/*": ["components/*"]
-      },
-      "plugins": [
-        // Transform paths in output .js files
-        { "transform": "typescript-transform-paths" }
-      ]
+    "target": "es6",
+    "module": "commonjs",
+    "outDir": "dist",
+    "baseUrl": "./src",
+    "paths": {
+      "@modules/*": ["modules/*"],
+      "@components/*": ["components/*"]
+    }
   },
   "include": [
-    "cypress/**/*.ts",
     "src/**/*.ts"
   ],
   "exclude": [
-      "node_modules"
+    "node_modules"
   ]
 }
