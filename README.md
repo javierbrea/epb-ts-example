@@ -1,32 +1,10 @@
 # eslint-plugin-boundaries TypeScript configuration example
 
-This repository contains an example of the eslint plugin [`eslint-plugin-boundaries`](https://github.com/javierbrea/eslint-plugin-boundaries) usage with [TypeScript](https://www.typescriptlang.org/), including custom TS paths.
+> [!WARNING]
+> This repository has been archived and is no longer maintained.
 
-The documentation of the plugin itself contains [`TypeScript` configuration instructions](https://github.com/javierbrea/eslint-plugin-boundaries#usage-with-typescript).
+The TypeScript configuration example for [`eslint-plugin-boundaries`](https://github.com/javierbrea/eslint-plugin-boundaries) has moved into the plugin's monorepo. You can now find it here:
 
-## Installation
+**https://github.com/javierbrea/eslint-plugin-boundaries/tree/master/examples/typescript**
 
-```bash
-git clone git@github.com:javierbrea/epb-ts-example.git
-cd epb-ts-example
-npm i
-```
-
-## Eslint execution
-
-Note that __the lint execution will return an error, but it is intentional__, as the `src/modules/module-b` element contains a forbidden import in order to check that the plugin works properly.
-
-```bash
-npm run lint
-
-# 1:21  error  Usage of 'modules' is not allowed in 'modules'  boundaries/element-types
-```
-
-## Tests
-
-Some tests have been added to check that both `TypeScript` compilation and `eslint` execution work as expected.
-
-```bash
-npm run build
-npm run test
-```
+The example is maintained there alongside the plugin, so it stays in sync with new releases. This standalone repository is read-only.
